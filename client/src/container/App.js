@@ -41,11 +41,16 @@ class App extends React.Component {
     const { user } = this.state;
     return (
       <Router>
-        <div className="content">
+        <div className="wrapper">
           <div className="nav-bar">
             <Navbar user={user} />
           </div>
-          <div className="main-content" style={{ border: "1px solid red" }}>
+          <div
+            className="main-content"
+            style={{
+              border: "1px solid red"
+            }}
+          >
             <Route path="/" exact component={Home} />
             <Route exact path="/login" component={AuthPage.Login} />
             <Route exact path="/register" component={AuthPage.Register} />
@@ -58,10 +63,10 @@ class App extends React.Component {
             />
             <Route exact path="/account" component={User.Profile} />
           </div>
-
           <div className="footer">
             <Footer />
           </div>
+
           <ChatBoxComponent />
         </div>
       </Router>
