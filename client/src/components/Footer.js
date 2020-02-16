@@ -1,15 +1,18 @@
 import React from "react";
 import { Segment, Container, Grid, List, Header } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 export default () => (
-  <Segment inverted vertical >
+  <Segment inverted vertical>
     <Container>
       <Grid divided inverted stackable>
         <Grid.Row>
           <Grid.Column width={3}>
             <h3> About </h3>
             <List link inverted>
-              <List.Item as="a">Home</List.Item>
+              <Link to="/">
+                <List.Item as="a">Home</List.Item>
+              </Link>
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
