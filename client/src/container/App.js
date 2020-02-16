@@ -47,11 +47,7 @@ class App extends React.Component {
             <Navbar user={user} />
           </div>
           <div
-            className="main-content"
-            style={{
-              border: "1px solid red"
-            }}
-          >
+            className="main-content">
             <Route path="/" exact component={Home} />
             <Route exact path="/login" component={AuthPage.Login} />
             <Route exact path="/register" component={AuthPage.Register} />

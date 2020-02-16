@@ -11,7 +11,19 @@ const ProductSchema = new mongoose.Schema({
 	},
 	name: String,
 	price: Number,
-	image: String
+	isFreeShipping: {
+		type: Boolean,
+		default: true
+	},
+	currencyId: {
+		type: Number,
+		enum: [1, 2, 3],
+		default: 3
+	},
+	image: {
+		title: String,
+		url: String
+	}
 });
 
 function escapeRegex(text) {
