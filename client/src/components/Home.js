@@ -29,7 +29,7 @@ const HomepageHeading = ({ mobile }) => (
     <h1
       inverted
       style={{
-        fontSize: mobile ? "2em" : "4em",
+        fontSize: mobile ? "2em" : "2.5em",
         fontWeight: "normal",
         marginBottom: 0,
         marginTop: mobile ? "1.5em" : "0.5em"
@@ -40,15 +40,31 @@ const HomepageHeading = ({ mobile }) => (
     <h2
       inverted
       style={{
-        fontSize: mobile ? "1.5em" : "1.7em",
+        fontSize: mobile ? "1.5em" : "1.2em",
         fontWeight: "normal",
         marginTop: mobile ? "0.5em" : "1.5em"
       }}
     >
       A project dedicated to study web programming.
     </h2>
-    <Button as={Link} to="/products" primary size="huge">
-      Go to product page
+    <Button
+      as={Link}
+      to="/products"
+      primary
+      size="huge"
+      style={{ margin: "30px 10px" }}
+    >
+      I want to BUY products
+      <Icon name="right arrow" />
+    </Button>
+    <Button
+      as={Link}
+      to="/seller-infor"
+      primary
+      size="huge"
+      style={{ margin: "30px 10px" }}
+    >
+      I want to become SELLER
       <Icon name="right arrow" />
     </Button>
   </Container>

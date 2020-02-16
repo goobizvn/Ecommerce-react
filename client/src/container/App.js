@@ -12,6 +12,7 @@ import ChatBoxComponent from "../components/chatbox/chatBox";
 import "../styles/commonStyle.css";
 import AboutComponent from "../components/about";
 import ItemDetails from "../components/ItemDetails";
+import SellerInfor from "../components/SellerInfor";
 
 class App extends React.Component {
   state = {
@@ -46,14 +47,14 @@ class App extends React.Component {
           <div className="nav-bar">
             <Navbar user={user} />
           </div>
-          <div
-            className="main-content">
+          <div className="main-content">
             <Route path="/" exact component={Home} />
             <Route exact path="/login" component={AuthPage.Login} />
             <Route exact path="/register" component={AuthPage.Register} />
             <Route exact path="/products" component={Products.Products} />
             <Route exact path="/about" component={AboutComponent} />
             <Route exact path="/details" component={ItemDetails} />
+            <Route exact path="/seller-infor" component={SellerInfor} />
 
             <Route
               exact
