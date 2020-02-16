@@ -16,7 +16,7 @@ export const PRODUCT_LIST = {
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
       isFreeShipping: true,
-      id: 12,
+      id: 11,
       sku: 12064273040195392,
       description: "4 MSL",
       availableSizes: ["S", "XS"],
@@ -29,7 +29,7 @@ export const PRODUCT_LIST = {
 
     {
       quantity: 1,
-      name: "T-shirt",
+      name: "Spans",
       price: 5,
       image: {
         title: "T-shirt",
@@ -48,14 +48,14 @@ export const PRODUCT_LIST = {
     },
     {
       quantity: 1,
-      name: "T-shirt",
+      name: "Hat",
       price: 5,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
       isFreeShipping: false,
-      id: 12,
+      id: 13,
       sku: 12064273040195392,
       description: "4 MSL",
       availableSizes: ["S", "XS"],
@@ -67,14 +67,14 @@ export const PRODUCT_LIST = {
     },
     {
       quantity: 1,
-      name: "T-shirt",
+      name: "Facemark",
       price: 5,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
       isFreeShipping: true,
-      id: 12,
+      id: 14,
       sku: 12064273040195392,
       description: "4 MSL",
       availableSizes: ["S", "XS"],
@@ -93,7 +93,7 @@ export const PRODUCT_LIST = {
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
       isFreeShipping: false,
-      id: 12,
+      id: 15,
       sku: 12064273040195392,
       description: "4 MSL",
       availableSizes: ["S", "XS"],

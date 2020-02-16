@@ -7,7 +7,7 @@ import Thumb from "../../share/Thumb";
 import { formatPrice } from "../../share/utils";
 import { addProduct } from "../../../reducers/cart/actions";
 
-const Product = ({ product, addProduct }) => {
+const Product = ({ user, product, addProduct }) => {
   product.quantity = 1;
 
   let formattedPrice = formatPrice(product.price, product.currencyId);
@@ -51,9 +51,15 @@ const Product = ({ product, addProduct }) => {
           <p>Total Products: {product.quantity}</p>
         </div>
       </Link>
-      <p className="shelf-item__buy-btn" onClick={() => addProduct(product)}>
-        ADD TO CARD
-      </p>
+      {user && user.authenticated ? (
+        <p className="shelf-item__buy-btn" onClick={() => addProduct(product)}>
+          ADD TO CARD
+        </p>
+      ) : (
+        <Link to="login">
+          <p className="shelf-item__buy-btn">LOGIN TO BUY</p>
+        </Link>
+      )}
     </div>
   );
 };
@@ -63,4 +69,7 @@ Product.propTypes = {
   addProduct: PropTypes.func.isRequired
 };
 
-export default connect(null, { addProduct })(Product);
+const mapStateToProps = state => ({
+  user: state.user
+});
+export default connect(mapStateToProps, { addProduct })(Product);
