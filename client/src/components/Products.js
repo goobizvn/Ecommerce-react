@@ -11,57 +11,97 @@ export const PRODUCT_LIST = {
       quantity: 1,
       name: "T-shirt",
       price: 5,
-      currencyId: 1,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
-      isFreeShipping: true
+      isFreeShipping: true,
+      id: 12,
+      sku: 12064273040195392,
+      description: "4 MSL",
+      availableSizes: ["S", "XS"],
+      style: "Black with custom print",
+      price: 10.9,
+      installments: 9,
+      currencyId: "USD",
+      currencyFormat: "$"
     },
 
     {
       quantity: 1,
       name: "T-shirt",
       price: 5,
-      currencyId: 2,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
-      isFreeShipping: true
+      isFreeShipping: true,
+      id: 12,
+      sku: 12064273040195392,
+      description: "4 MSL",
+      availableSizes: ["S", "XS"],
+      style: "Black with custom print",
+      price: 10.9,
+      installments: 9,
+      currencyId: "USD",
+      currencyFormat: "$"
     },
     {
       quantity: 1,
       name: "T-shirt",
       price: 5,
-      currencyId: 3,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
-      isFreeShipping: false
+      isFreeShipping: false,
+      id: 12,
+      sku: 12064273040195392,
+      description: "4 MSL",
+      availableSizes: ["S", "XS"],
+      style: "Black with custom print",
+      price: 10.9,
+      installments: 9,
+      currencyId: "USD",
+      currencyFormat: "$"
     },
     {
       quantity: 1,
       name: "T-shirt",
       price: 5,
-      currencyId: 2,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
-      isFreeShipping: true
+      isFreeShipping: true,
+      id: 12,
+      sku: 12064273040195392,
+      description: "4 MSL",
+      availableSizes: ["S", "XS"],
+      style: "Black with custom print",
+      price: 10.9,
+      installments: 9,
+      currencyId: "USD",
+      currencyFormat: "$"
     },
     {
       quantity: 1,
       name: "T-shirt",
       price: 5,
-      currencyId: 3,
       image: {
         title: "T-shirt",
         url: "https://i.stack.imgur.com/xskB0.jpg"
       },
-      isFreeShipping: false
+      isFreeShipping: false,
+      id: 12,
+      sku: 12064273040195392,
+      description: "4 MSL",
+      availableSizes: ["S", "XS"],
+      style: "Black with custom print",
+      price: 10.9,
+      installments: 9,
+      currencyId: "USD",
+      currencyFormat: "$"
     }
   ]
 };

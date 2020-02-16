@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import ChatBoxComponent from "../components/chatbox/chatBox";
 import "../styles/commonStyle.css";
 import AboutComponent from "../components/about";
+import ItemDetails from "../components/ItemDetails";
 
 class App extends React.Component {
   state = {
@@ -56,6 +57,8 @@ class App extends React.Component {
             <Route exact path="/register" component={AuthPage.Register} />
             <Route exact path="/products" component={Products.Products} />
             <Route exact path="/about" component={AboutComponent} />
+            <Route exact path="/details" component={ItemDetails} />
+
             <Route
               exact
               path="/admin/product/add"
