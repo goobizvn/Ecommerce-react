@@ -84,7 +84,7 @@ class Login extends Component {
           })
           .catch(e =>
             this.setState(() => ({
-              error: e.data.message,
+              error: "Login Error, Please Try Again",
               loginSuccessful: false
             }))
           );
