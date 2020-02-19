@@ -11,5 +11,6 @@ export const ApiClient = {
   search: (item) => {
     console.log('apiclient: ', item);
     return axios.post('/products/search', {search: item})
-  }
+  },
+  chat: (text)=> axios.post("/chat", {text: text})
 }

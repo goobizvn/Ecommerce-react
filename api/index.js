@@ -9,6 +9,7 @@ const admin = require('./admin');
 const product = require('./product');
 const Cart = require('../model/cart');
 const { successMessage, failedMessage } = require('../utils/message');
+const request = require('request');
 
 const authenticate = (req, res, next) => {
 	const token = req.header('x-auth');
@@ -25,6 +26,29 @@ const authenticate = (req, res, next) => {
 		})
 		.catch(() => res.status(401).json(failedMessage('User is not authorized')));
 };
+
+api.post('/chat', function(req, res) {
+	const text = req.body.text
+
+	console.log(text)
+
+	var options = {
+		'method': 'POST',
+		'url': 'http://undertheseanlp.com:8000/chatbot',
+		'headers': {
+		},
+		body: "{\"text\":\""+text+"\",\"user\":\"f57e9a88\"}"
+	  
+	  };
+	  request(options, function (error, response) { 
+		if (error) {
+			res.status = 500;
+		  return res.send(error)
+		}
+		const info = JSON.parse(response.body);
+		return res.send(info.output)
+	  });
+})
 
 // ROUTE -- /user/*
 api.use('/user', authenticate, user);
