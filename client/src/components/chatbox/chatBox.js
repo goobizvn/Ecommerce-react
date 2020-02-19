@@ -27,8 +27,8 @@ class ChatBoxComponent extends Component {
             <div className="chatBox">
                 <Widget 
                     handleNewUserMessage={this.handleNewUserMessage}
-                    title="My title"
-                    subtitle="My subtitle"
+                    title="ChatBox"
+                    subtitle="What I can help you?"
                 />
             </div>
         );
